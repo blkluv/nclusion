@@ -88,7 +88,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | `PRD-001` | Define MVP scope and non-goals for assignment submission | ✅ |
 | `PRD-002` | Finalize supported betting markets for demo: win/draw/loss only | ✅ |
 | `PRD-003` | Define user-visible bet statuses and balance labels | ✅ |
-| `PRD-004` | Finalize Haitian Creole and French terminology glossary | ⏳ |
+| `PRD-004` | Finalize Haitian Creole and French terminology glossary | ✅ |
 | `ARCH-001` | Choose mobile stack and local storage strategy | ✅ |
 | `ARCH-002` | Choose backend framework and service boundaries | ✅ |
 | `ARCH-003` | Choose Solana program account model and instruction set | ✅ |
@@ -347,6 +347,30 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## PRD-004: Finalize Haitian Creole and French terminology glossary ✅
+
+### Plain-English Summary
+- Created `docs/glossary.md` with ~120 user-facing terms in English, Haitian Creole, and French.
+- Covers navigation, bet statuses, balance labels, bet slip, confirmation, match info, connectivity, errors, receipts, settlement, and general UI.
+- Serves as the source of truth for localization bundles in MOB-004.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `PRD-004`
+- **Branch:** `feature/PRD-004-localization-glossary`
+
+### Files Changed
+- **Created:** `docs/glossary.md` — localization glossary
+- **Created:** `docs/primers/PRD-004-primer.md`
+- **Updated:** `docs/DEVLOG.md` — this entry
+
+### Next Steps
+- PM-001: Define demo story and acceptance checklist
+- PM-002: Define success metrics
 
 ---
 
