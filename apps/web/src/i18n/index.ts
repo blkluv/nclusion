@@ -1,15 +1,17 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import ht from "./ht.json";
+import en from "./en.json";
 import fr from "./fr.json";
+import ht from "./ht.json";
 
 i18next.use(initReactI18next).init({
 	resources: {
+		en: { translation: en },
 		ht: { translation: ht },
 		fr: { translation: fr },
 	},
-	lng: "ht",
-	fallbackLng: "ht",
+	lng: "en",
+	fallbackLng: "en",
 	interpolation: { escapeValue: false },
 });
 

@@ -1,0 +1,9 @@
+{
+	"nav": { "home": "Home", "history": "History", "wallet": "Wallet" },
+	"status": { "draft": "Draft", "queued": "Queued", "processing": "Processing", "confirmed": "Confirmed", "pending_settlement": "Pending Settlement", "won": "Won", "lost": "Lost", "cancelled": "Cancelled", "failed": "Failed" },
+	"balance": { "available": "Available", "in_active_bets": "In Active Bets", "pending_settlement": "Pending Settlement" },
+	"bet": { "place_bet": "Place Bet", "confirm_bet": "Confirm Bet", "stake": "Stake", "potential_payout": "Potential Payout", "accepted_odds": "Accepted Odds", "home_win": "Home Win", "draw": "Draw", "away_win": "Away Win" },
+	"connectivity": { "offline": "Offline", "limited": "Limited Connection", "synced": "Synced" },
+	"errors": { "connection_lost": "Connection Lost", "odds_changed": "Odds have changed. Please review and confirm.", "insufficient_balance": "Not enough HTGN available.", "generic_error": "Something went wrong. Please try again." },
+	"general": { "loading": "Loading...", "refresh": "Refresh", "confirm": "Confirm", "cancel": "Cancel", "try_again": "Try Again" }
+}

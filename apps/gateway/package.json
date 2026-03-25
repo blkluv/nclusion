@@ -16,7 +16,10 @@
   "dependencies": {
     "hono": "^4",
     "@hono/node-server": "^1",
-    "@nclusion/shared-types": "workspace:*"
+    "@nclusion/shared-types": "workspace:*",
+    "@nclusion/match-odds": "workspace:*",
+    "@nclusion/betting": "workspace:*",
+    "@nclusion/balance": "workspace:*"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9",
