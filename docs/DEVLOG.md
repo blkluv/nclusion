@@ -85,7 +85,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 
 | Ticket | Title | Status |
 |--------|-------|--------|
-| `PRD-001` | Define MVP scope and non-goals for assignment submission | ⏳ |
+| `PRD-001` | Define MVP scope and non-goals for assignment submission | ✅ |
 | `PRD-002` | Finalize supported betting markets for demo: win/draw/loss only | ⏳ |
 | `PRD-003` | Define user-visible bet statuses and balance labels | ⏳ |
 | `PRD-004` | Finalize Haitian Creole and French terminology glossary | ⏳ |
@@ -347,6 +347,38 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## PRD-001: Define MVP scope and non-goals for assignment submission ✅
+
+### Plain-English Summary
+- Created the authoritative MVP scope document (`docs/mvp-scope.md`) that consolidates scope from requirements.md and prd.md into a single reference.
+- Defines exactly what is in scope (mobile app, backend, Solana program, operator tooling, infrastructure), what is out of scope with rationale, and the 10-point demo acceptance criteria.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `PRD-001`
+- **Branch:** `feature/PRD-001-define-mvp-scope`
+- **Related Docs:** `requirements.md`, `prd.md`, `techstack.md`, `production.md`
+
+### Key Achievements
+- Single-page MVP scope document created
+- In-scope / out-of-scope boundary locked
+- Demo acceptance criteria consolidated
+- Added to index.md reading order as #1
+
+### Files Changed
+- **Created:** `docs/mvp-scope.md` — authoritative MVP scope reference
+- **Created:** `docs/primers/PRD-001-primer.md` — ticket primer
+- **Modified:** `index.md` — added mvp-scope.md to reading order and document map
+- **Updated:** `docs/DEVLOG.md` — this entry
+
+### Next Steps
+- PRD-002: Finalize supported betting markets
+- PRD-003: Define user-visible bet statuses and balance labels
+- PRD-004: Finalize Haitian Creole and French terminology glossary
 
 ---
 
