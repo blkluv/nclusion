@@ -14,13 +14,14 @@ The document set consistently emphasizes:
 
 ## Reading Order
 
-1. [`requirements.md`](./requirements.md) for the full functional and non-functional scope.
-2. [`interviews.md`](./interviews.md) for the rationale behind major product, technical, and business decisions.
-3. [`systemsdesign.md`](./systemsdesign.md) for the target architecture and system boundaries.
-4. [`designstyleguide.md`](./designstyleguide.md) for the visual design system, color palette, typography, components, and UI patterns.
-5. [`techstack.md`](./techstack.md) for locked technology choices, frameworks, and tooling across all layers.
-6. [`production.md`](./production.md) for the deployment strategy, platform choices, and demo distribution plan.
-7. [`prd.md`](./prd.md) for delivery planning, phased execution, and implementation backlog.
+1. [`docs/mvp-scope.md`](./docs/mvp-scope.md) for the authoritative MVP scope, non-goals, and demo acceptance criteria.
+2. [`requirements.md`](./requirements.md) for the full functional and non-functional scope.
+3. [`interviews.md`](./interviews.md) for the rationale behind major product, technical, and business decisions.
+4. [`systemsdesign.md`](./systemsdesign.md) for the target architecture and system boundaries.
+5. [`designstyleguide.md`](./designstyleguide.md) for the visual design system, color palette, typography, components, and UI patterns.
+6. [`techstack.md`](./techstack.md) for locked technology choices, frameworks, and tooling across all layers.
+7. [`production.md`](./production.md) for the deployment strategy, platform choices, and demo distribution plan.
+8. [`prd.md`](./prd.md) for delivery planning, phased execution, and implementation backlog.
 
 ## Document Map
 
