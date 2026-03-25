@@ -71,7 +71,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
-| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (4/19) |
+| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (5/19) |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
@@ -114,7 +114,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | `API-006` | Create match and odds service skeleton | ⏳ |
 | `API-007` | Create receipt and history service skeleton | ⏳ |
 | `SOL-001` | Initialize Rust Solana program scaffold | ✅ |
-| `SOL-002` | Define program accounts and PDA strategy | ⏳ |
+| `SOL-002` | Define program accounts and PDA strategy | ✅ |
 | `SOL-003` | Implement devnet deployment pipeline | ⏳ |
 | `SOL-004` | Set up HTGN demo token mint or integration path | ⏳ |
 | `INF-001` | Set up environment configuration and secrets handling for demo | ✅ |
@@ -347,6 +347,33 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## SOL-002: Define program accounts and PDA strategy ✅
+
+### Plain-English Summary
+- Defined Market and Bet account structs with size calculations.
+- PDA seeds: Market (`market` + market_id), Bet (`bet` + market_id + user + nonce), Escrow (`escrow` + market_id).
+- Enums: MarketStatus (Open/Closed/Settled/Cancelled), Selection (Home/Draw/Away), BetStatus (Placed/AwaitingResult/Won/Lost/Cancelled).
+- `initialize_market_escrow` instruction creates market accounts.
+- 3 PDA derivation tests proving determinism and uniqueness.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `SOL-002`
+- **Branch:** `feature/SOL-002-accounts-pda`
+
+### Testing
+- Tests added: 3 (PDA derivation)
+- Total Rust tests: 4 passed
+
+### Files Changed
+- **Modified:** `programs/escrow/src/lib.rs` — initialize_market_escrow instruction
+- **Created:** `programs/escrow/src/state.rs` — Market, Bet accounts, enums
+- **Created:** `programs/escrow/tests/pda_test.rs` — PDA derivation tests
+- **Updated:** `docs/DEVLOG.md` — this entry
 
 ---
 
