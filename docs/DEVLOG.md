@@ -72,7 +72,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
 | P1 | Foundations | `MOB-001` to `INF-003` | ✅ Complete (19/19) |
-| P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
+| P2 | Core Betting Loop | `ODDS-001` to `SET-005` | 🔄 In Progress (21/34) |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
 | P5 | Production Readiness | `COMP-001` to `OPS-007` | ⏳ Pending |
@@ -125,40 +125,40 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 
 | Ticket | Title | Status |
 |--------|-------|--------|
-| `ODDS-001` | Integrate real odds provider for football fixtures | ⏳ |
-| `ODDS-002` | Normalize provider data into internal match and market models | ⏳ |
-| `ODDS-003` | Build compact match list endpoint | ⏳ |
-| `ODDS-004` | Build match detail endpoint with basic outcome odds | ⏳ |
-| `ODDS-005` | Add cache and TTL strategy for odds payloads | ⏳ |
+| `ODDS-001` | Integrate real odds provider for football fixtures | ✅ |
+| `ODDS-002` | Normalize provider data into internal match and market models | ✅ |
+| `ODDS-003` | Build compact match list endpoint | ✅ |
+| `ODDS-004` | Build match detail endpoint with basic outcome odds | ✅ |
+| `ODDS-005` | Add cache and TTL strategy for odds payloads | ✅ |
 | `WAL-001` | Create managed wallet on first user setup | ⏳ |
 | `WAL-002` | Surface HTGN balance from shadow ledger | ⏳ |
-| `BAL-001` | Implement `available`, `reserved`, and `pending settlement` balance model | ⏳ |
+| `BAL-001` | Implement `available`, `reserved`, and `pending settlement` balance model | ✅ |
 | `BAL-002` | Add reconciliation job for chain and ledger views | ⏳ |
 | `BET-001` | Build match detail UI and selection flow | ⏳ |
 | `BET-002` | Build bet slip and stake input UI | ⏳ |
 | `BET-003` | Build confirmation screen with payout preview | ⏳ |
-| `BET-004` | Accept bet intent with idempotency key | ⏳ |
-| `BET-005` | Validate stake, odds window, and balance before submission | ⏳ |
-| `BET-006` | Reserve funds in balance service | ⏳ |
-| `BET-007` | Generate deterministic bet ID | ⏳ |
+| `BET-004` | Accept bet intent with idempotency key | ✅ |
+| `BET-005` | Validate stake, odds window, and balance before submission | ✅ |
+| `BET-006` | Reserve funds in balance service | ✅ |
+| `BET-007` | Generate deterministic bet ID | ✅ |
 | `REL-001` | Implement transaction relay service | ⏳ |
 | `REL-002` | Sponsor transaction fees from platform wallet | ⏳ |
 | `REL-003` | Submit place-bet transactions through RPC abstraction | ⏳ |
 | `REL-004` | Track signature and confirmation stages | ⏳ |
 | `REL-005` | Expose bet lifecycle status updates to betting service | ⏳ |
-| `SOL-005` | Implement `place_bet` instruction | ⏳ |
-| `SOL-006` | Implement canonical bet record write | ⏳ |
-| `SOL-007` | Implement escrow logic for HTGN stake | ⏳ |
-| `SOL-008` | Enforce duplicate prevention and status constraints | ⏳ |
-| `HIS-001` | Build user bet history endpoint | ⏳ |
-| `HIS-002` | Build bet receipt endpoint | ⏳ |
+| `SOL-005` | Implement `place_bet` instruction | ✅ |
+| `SOL-006` | Implement canonical bet record write | ✅ |
+| `SOL-007` | Implement escrow logic for HTGN stake | ✅ |
+| `SOL-008` | Enforce duplicate prevention and status constraints | ✅ |
+| `HIS-001` | Build user bet history endpoint | ✅ |
+| `HIS-002` | Build bet receipt endpoint | ✅ |
 | `HIS-003` | Show user-facing statuses in mobile app | ⏳ |
 | `HIS-004` | Store recent bet history locally for offline access | ⏳ |
-| `SET-001` | Integrate result provider | ⏳ |
-| `SET-002` | Implement settlement service for final result ingestion | ⏳ |
-| `SET-003` | Implement `settle_market` instruction | ⏳ |
-| `SET-004` | Update balances after settlement | ⏳ |
-| `SET-005` | Reflect settlement state in history and receipts | ⏳ |
+| `SET-001` | Integrate result provider | ✅ |
+| `SET-002` | Implement settlement service for final result ingestion | ✅ |
+| `SET-003` | Implement `settle_market` instruction | ✅ |
+| `SET-004` | Update balances after settlement | ✅ |
+| `SET-005` | Reflect settlement state in history and receipts | ✅ |
 
 ### P3: Demo Hardening
 
