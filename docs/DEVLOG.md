@@ -71,7 +71,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
-| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (11/19) |
+| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (12/19) |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
@@ -101,7 +101,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 
 | Ticket | Title | Status |
 |--------|-------|--------|
-| `MOB-001` | Initialize Android-first TypeScript app | ⏳ |
+| `MOB-001` | Initialize Android-first TypeScript app | ✅ |
 | `MOB-002` | Add navigation shell for key mobile screens | ⏳ |
 | `MOB-003` | Add SQLite persistence layer | ⏳ |
 | `MOB-004` | Add localization framework and language switching | ⏳ |
@@ -347,6 +347,33 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## MOB-001: Initialize Android-first TypeScript app ✅
+
+### Plain-English Summary
+- React Native 0.84.1 bare workflow initialized in `apps/mobile/`.
+- Android debug APK builds successfully with strict pnpm node_modules.
+- Gradle paths configured for monorepo layout. Hermes enabled by default (RN 0.84).
+- Added `@react-native/gradle-plugin` and `@react-native/codegen` as explicit deps for pnpm compatibility.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `MOB-001`
+- **Branch:** `feature/MOB-001-init-rn-app`
+
+### Key Achievements
+- RN bare workflow in pnpm monorepo (non-trivial setup)
+- Android APK builds (BUILD SUCCESSFUL)
+- Hermes engine enabled
+- Java 17, Android SDK 34, build-tools 34.0.0 installed
+
+### Files Changed
+- **Created:** `apps/mobile/` — full React Native project (52 files)
+- **Modified:** `pnpm-lock.yaml`
+- **Updated:** `docs/DEVLOG.md` — this entry
 
 ---
 
