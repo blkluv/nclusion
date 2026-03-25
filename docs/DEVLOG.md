@@ -70,7 +70,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
-| P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | ⏳ Pending |
+| P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
 | P1 | Foundations | `MOB-001` to `INF-003` | ⏳ Pending |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
@@ -94,8 +94,8 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | `ARCH-003` | Choose Solana program account model and instruction set | ✅ |
 | `ARCH-004` | Select odds provider and result provider for demo | 🔶 Narrowed |
 | `ARCH-005` | Define HTGN demo token model on devnet | ✅ |
-| `PM-001` | Define demo story and acceptance checklist | ⏳ |
-| `PM-002` | Define success metrics for demo walkthrough | ⏳ |
+| `PM-001` | Define demo story and acceptance checklist | ✅ |
+| `PM-002` | Define success metrics for demo walkthrough | ✅ |
 
 ### P1: Foundations
 
@@ -347,6 +347,41 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## PM-002: Define success metrics for demo walkthrough ✅
+
+### Plain-English Summary
+- Created `docs/success-metrics.md` with 8 demo pass/fail criteria, 8 MVP product metrics with quantitative targets, and 5 production reference metrics.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `PM-002`
+- **Branch:** `feature/PM-001-demo-script`
+
+### Files Changed
+- **Created:** `docs/success-metrics.md`
+- **Updated:** `docs/DEVLOG.md` — this entry
+
+---
+
+## PM-001: Define demo story and acceptance checklist ✅
+
+### Plain-English Summary
+- Created `docs/demo-script.md` — a 10-step rehearsable demo script with talking points, on-screen actions, and timing targets (~8-10 minutes).
+- Includes a 12-point acceptance checklist for pre-demo verification.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `PM-001`
+- **Branch:** `feature/PM-001-demo-script`
+
+### Files Changed
+- **Created:** `docs/demo-script.md`
+- **Updated:** `docs/DEVLOG.md` — this entry
 
 ---
 
