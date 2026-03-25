@@ -71,7 +71,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
-| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (5/19) |
+| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (6/19) |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
@@ -107,7 +107,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | `MOB-004` | Add localization framework and language switching | ⏳ |
 | `MOB-005` | Add network-state detection and connectivity banner | ⏳ |
 | `API-001` | Initialize TypeScript backend monorepo or service layout | ✅ |
-| `API-002` | Create API gateway with auth middleware | ⏳ |
+| `API-002` | Create API gateway with auth middleware | ✅ |
 | `API-003` | Create user service and managed wallet mapping | ⏳ |
 | `API-004` | Create betting service skeleton | ⏳ |
 | `API-005` | Create balance service skeleton | ⏳ |
@@ -347,6 +347,33 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## API-002: Create API gateway with auth middleware ✅
+
+### Plain-English Summary
+- Auth middleware: Bearer token validation, userId extraction to context.
+- Rate limiter: 60 req/min per IP (in-memory, MVP-grade).
+- Idempotency middleware: requires Idempotency-Key on POST/PUT/PATCH mutations.
+- API route stubs mounted for matches, betting, balance, and history.
+- 11 tests covering auth rejection/acceptance, idempotency enforcement, and route stubs.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `API-002`
+- **Branch:** `feature/API-002-gateway-auth`
+
+### Testing
+- Tests added: 10 (total gateway: 11)
+- Test results: 11 passed
+
+### Files Changed
+- **Created:** `apps/gateway/src/middleware/auth.ts`, `rate-limit.ts`, `idempotency.ts`
+- **Modified:** `apps/gateway/src/app.ts` — middleware + route stubs
+- **Modified:** `apps/gateway/src/index.test.ts` — expanded tests
+- **Updated:** `docs/DEVLOG.md` — this entry
 
 ---
 
