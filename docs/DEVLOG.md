@@ -71,7 +71,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
-| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (15/19) |
+| P1 | Foundations | `MOB-001` to `INF-003` | ✅ Complete (19/19) |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
@@ -102,10 +102,10 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Ticket | Title | Status |
 |--------|-------|--------|
 | `MOB-001` | Initialize Android-first TypeScript app | ✅ |
-| `MOB-002` | Add navigation shell for key mobile screens | ⏳ |
-| `MOB-003` | Add SQLite persistence layer | ⏳ |
-| `MOB-004` | Add localization framework and language switching | ⏳ |
-| `MOB-005` | Add network-state detection and connectivity banner | ⏳ |
+| `MOB-002` | Add navigation shell for key mobile screens | ✅ |
+| `MOB-003` | Add SQLite persistence layer | ✅ |
+| `MOB-004` | Add localization framework and language switching | ✅ |
+| `MOB-005` | Add network-state detection and connectivity banner | ✅ |
 | `API-001` | Initialize TypeScript backend monorepo or service layout | ✅ |
 | `API-002` | Create API gateway with auth middleware | ✅ |
 | `API-003` | Create user service and managed wallet mapping | ✅ |
@@ -347,6 +347,23 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## MOB-002 through MOB-005: Mobile foundations ✅
+
+### Plain-English Summary
+- Navigation: RootNavigator (stack) + MainTabs (Home/History/Wallet) + 7 screens
+- SQLite: op-sqlite with WAL mode, migration system, 5 tables
+- Localization: i18next with Haitian Creole (default) + French, ~60 terms bundled
+- Network: useNetworkState hook + ConnectivityBanner (offline/limited/synced)
+- Zustand store, App.tsx wired up
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Tickets:** `MOB-002`, `MOB-003`, `MOB-004`, `MOB-005`
+- **Branch:** `feature/MOB-002-005-mobile-foundations`
 
 ---
 
