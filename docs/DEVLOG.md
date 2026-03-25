@@ -71,7 +71,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | Phase | Name | Ticket Range | Status |
 |------|------|--------------|--------|
 | P0 | Discovery and Scope Lock | `PRD-001` to `PM-002` | 🔶 10/11 complete (ARCH-004 narrowed) |
-| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (1/19) |
+| P1 | Foundations | `MOB-001` to `INF-003` | 🔄 In Progress (2/19) |
 | P2 | Core Betting Loop | `ODDS-001` to `SET-005` | ⏳ Pending |
 | P3 | Demo Hardening | `OFF-001` to `QA-005` | ⏳ Pending |
 | P4 | MVP Operational Hardening | `RPC-001` to `SUP-003` | ⏳ Pending |
@@ -118,7 +118,7 @@ The product goal is a low-bandwidth, Android-first sports betting platform for t
 | `SOL-003` | Implement devnet deployment pipeline | ⏳ |
 | `SOL-004` | Set up HTGN demo token mint or integration path | ⏳ |
 | `INF-001` | Set up environment configuration and secrets handling for demo | ⏳ |
-| `INF-002` | Set up shared types and schemas across mobile and backend | ⏳ |
+| `INF-002` | Set up shared types and schemas across mobile and backend | ✅ |
 | `INF-003` | Set up CI for lint, test, and build checks | ⏳ |
 
 ### P2: Core Betting Loop
@@ -347,6 +347,35 @@ Use this structure for each completed ticket entry.
 ### Next Steps
 - [What this ticket unblocks]
 - [What should be tackled next]
+
+---
+
+## INF-002: Set up shared types / schemas across mobile and backend ✅
+
+### Plain-English Summary
+- Populated `packages/shared-types/` with Zod schemas for all 7 core entities and 4 enums.
+- 15 tests covering schema validation and rejection of invalid data.
+- Schemas importable from all workspace packages.
+
+### Metadata
+- **Status:** Complete
+- **Date:** Mar 24, 2026
+- **Ticket:** `INF-002`
+- **Branch:** `feature/INF-002-shared-types`
+
+### Testing
+- Tests added: 15
+- Test results: 15 passed
+
+### Files Changed
+- **Modified:** `packages/shared-types/src/index.ts` — Zod schemas, types, enums
+- **Created:** `packages/shared-types/src/index.test.ts` — validation tests
+- **Created:** `docs/primers/INF-002-primer.md`
+- **Updated:** `docs/DEVLOG.md` — this entry
+
+### Next Steps
+- API-002 through API-007 can now import shared types
+- INF-001: Environment config
 
 ---
 
