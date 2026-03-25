@@ -10,6 +10,29 @@ A mobile-first sports betting platform for the Haitian market that uses HTGN sta
 
 ---
 
+## Supported Markets (PRD-002)
+
+| Property | Value |
+|----------|-------|
+| Sport | Football (soccer) only |
+| Focus | World Cup and high-interest matches |
+| Market type | 1X2 — Home win / Draw / Away win |
+| Bet type | Single bets only |
+| Parlay / accumulator | Not supported |
+| Props / specials | Not supported |
+| Over/under | Not supported |
+| Live / in-play betting | Not supported |
+
+### Implications
+
+- **Bet slip:** accepts exactly one outcome selection per bet
+- **Odds service:** normalizes provider data to three decimal odds per match (home, draw, away)
+- **Solana program:** `place_bet` instruction takes a single `selection` enum (Home / Draw / Away)
+- **Settlement:** one result per match resolves all bets — no partial or multi-leg resolution
+- **UI:** match detail shows three tappable outcome cards with odds
+
+---
+
 ## Target User
 
 A Haitian mobile user who:
